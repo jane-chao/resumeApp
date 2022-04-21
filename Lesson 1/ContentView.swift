@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     let me = Resume.shared
     
-    
     var body: some View {
         VStack (spacing: 30) {
             HStack {
@@ -24,7 +23,6 @@ struct ContentView: View {
                         .font(.title).bold()
                     Text(me.title)
                     Label(me.location, systemImage: "location.fill").foregroundColor(.secondary)
-                    
                 }
             }
             
@@ -36,9 +34,6 @@ struct ContentView: View {
                 .padding(.vertical, 10)
                 .frame(maxWidth: .infinity)
                 .background(RoundedRectangle(cornerRadius: 20).foregroundColor(.brown))
-            
-            
-            
         }.padding()
     }
 }
